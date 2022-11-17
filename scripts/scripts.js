@@ -1,14 +1,14 @@
-const hamburguer = document.getElementById('hamburguer');
+const buttonMenu = document.getElementById('button-menu');
 const menu = document.getElementById('menu');
 const menuList = document.getElementById('menu-list');
 
-hamburguer.addEventListener('click', ()=>{
-    console.log(menuList.children.children);
-    menu.classList.toggle('show');
-    hamburguer.classList.toggle('toogle_open');
+buttonMenu.addEventListener('click', ()=>{
+    menu.classList.toggle('show-menu');
+    buttonMenu.classList.toggle('toggle');
 });
 
-menuList.addEventListener('click', (e)=>{
-    menu.classList.remove('show');
-    hamburguer.classList.remove('toogle_open');
+menuList.addEventListener('click', ()=>{
+    console.log('ey you');
+    menu.classList.remove('show-menu');
+    buttonMenu.classList.remove('toggle');
 })
