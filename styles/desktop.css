@@ -1,39 +1,61 @@
-.hamburguer {
-    background-image: url('');
+main {
+    margin-top: 80px;
+}
+header {
+    left:unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+.logo {
+    font-size: var(--font-medium);
+}
+.home, .about, .skills, .projects {
+    height: auto;
+    min-height: 620px;
+}
+.contact {
+    height: 450px;
+    min-height: 450px;
+}
+.projects{ margin-top: 8rem; }
+.button-menu {
+    display: none;
 }
 .menu {
-    width: 100%;
-    height: 50px;
+    position: relative;
+    width: auto;
+    height: auto;
     padding: 0;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--awesome);
-    background-color: var(--background);
-    transform: translateX(0);
+    top: 0;
+    background-color: transparent;
+    transform: translate(0);
 }
-.menu-list {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+.menu ul {
     display: flex;
 }
 .menu_item {
-    margin: 0 30px;
-    font-size: 1.8rem;
-    font-weight: 300;
+    margin: 0;
 }
-.menu_item--icon {
-    width: 20px;
-    height: 20px;
-    top: 9px;
-    left: -25px;
+.menu_item a {
+    position: relative;
+    width: 80px;
+    margin-right: 12px;
+    font-size: 1.6rem;
+    /* text-transform: uppercase; */
 }
-.main, .footer {
-    margin-left: 0;
-}
-.home {
-    height: 100vh;
-}
-.footer {
-    width: 100%;
+.item-selected::after {
+    animation: grow .8s cubic-bezier(.25,1,.5,1);
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: currentColor;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translate(-50%);
 }

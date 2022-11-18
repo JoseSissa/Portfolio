@@ -1,64 +1,17 @@
-body {
-    background-color: black;
+main {
+    padding: 0 8rem;
 }
-.footer {
-    width: calc(100% - 60px);
+header {
+    height: 80px;
+    padding: 0 8rem;
 }
-.main, .footer {
-    margin-left: 60px;
-}
-.menu  {
-    width: 350px;
-    padding: 30px 0px 30px 25px;
-    transform: translateX(-290px);
-}
-.show {
-    transform: translateX(0px);
-}
-.menu_item a {
-    width: 100%;
-}
-.menu_item--icon {
-    position: absolute;
-    right: 18px;
-    top: 10px;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.home-icon {
-    background-image: url('../assets/icons/home-icon.svg');
-}
-.about-icon {
-    background-image: url('../assets/icons/about-me-icon.svg');
-}
-.skills-icon {
-    background-image: url('../assets/icons/skills-icon.svg');
-}
-.project-icon {
-    background-image: url('../assets/icons/projects-icon.svg');
-}
-.contact-icon {
-    background-image: url('../assets/icons/contact-icon.svg');
-}
-
-.about {
-    text-align: center;
-}
-
-.tools_container {
-    grid-template-columns: repeat(5, 90px);
-    place-content: center;
-    gap: 25px;
-}
-.contact_options {
-    grid-template-columns: repeat(4, 90px);
-    place-content: center;
+.about, .skills, .contact {
+    padding: 0;
 }
 .projects-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin: 5rem 0;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact {
+    margin-bottom: 0;
 }

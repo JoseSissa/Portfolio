@@ -37,9 +37,6 @@ p {
     line-height: 3rem;
 }
 
-
-
-
 main {
     padding: 0 2rem;
 }
@@ -57,14 +54,17 @@ header {
     z-index: 10;
 }
 header div {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 section {
     width: 100%;
+    max-width: 75rem;
     height: auto;
     min-height: 100vh;
+    margin: 0 auto;
 }
 .button-menu {
     display: flex;
@@ -96,6 +96,7 @@ section {
     font-size: var(--font-small);
     font-weight: 500;
     color: var(--white);
+    text-decoration: none;
 }
 .menu {
     position: fixed;
@@ -174,7 +175,6 @@ section {
 .projects {
     height: auto;
     min-height: 100vh;
-    padding: 18rem 0 0 0;
     background: radial-gradient(4px 4px at 50% 50%, #1F1F24 50%, transparent 50%) top / 40px 40px repeat, radial-gradient(8px 8px at 50% 50%, rgba(255,255,255,.1) 50%, transparent 50%) top / 40px 40px repeat;
 }
 .projects-container {
