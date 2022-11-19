@@ -86,6 +86,7 @@ section {
     height: auto;
     min-height: 100vh;
     margin: 0 auto;
+    /* scroll-margin-top: 0px; */
 }
 .button-menu {
     display: flex;
@@ -171,7 +172,7 @@ section {
     font-weight: 500;
     cursor: pointer;
 }
-.skills {
+.skills, .projects {
     height: auto;
     min-height: 100vh;
     padding: 18rem 0 0 0;
@@ -196,10 +197,11 @@ section {
 .projects {
     height: auto;
     min-height: 100vh;
-    background: radial-gradient(4px 4px at 50% 50%, #1F1F24 50%, transparent 50%) top / 40px 40px repeat, radial-gradient(8px 8px at 50% 50%, rgba(255,255,255,.1) 50%, transparent 50%) top / 40px 40px repeat;
 }
 .projects-container {
     display: grid;
+    background: radial-gradient(4px 4px at 50% 50%, #1F1F24 50%, transparent 50%) top / 40px 40px repeat, radial-gradient(8px 8px at 50% 50%, rgba(255,255,255,.1) 50%, transparent 50%) top / 40px 40px repeat;
+    padding: 50px 0 30px;
 }
 .project {
     position: relative;
