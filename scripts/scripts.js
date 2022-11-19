@@ -23,19 +23,21 @@ const selectItem = (numItem) => {
 }
 
 const callback = (entries) => {
-    if(entries[0].target.id === "home") {
+    console.log(entries);
+    console.log(entries[entries.length-1].target.id);
+    if(entries[entries.length-1].target.id === "home") {
         selectItem(0)
     }
-    if(entries[0].target.id === "about") {
+    if(entries[entries.length-1].target.id === "about") {
         selectItem(1)
     }
-    if(entries[0].target.id === "skills") {
+    if(entries[entries.length-1].target.id === "skills") {
         selectItem(2)
     }
-    if(entries[0].target.id === "projects") {
+    if(entries[entries.length-1].target.id === "projects") {
         selectItem(3)
     }
-    if(entries[0].target.id === "contact") {
+    if(entries[entries.length-1].target.id === "contact") {
         selectItem(4)
     }
 }
@@ -47,6 +49,21 @@ const options = {
 
 const observer = new IntersectionObserver(callback, options)
 boxes.forEach(elem => observer.observe(elem))
+
 list.addEventListener('click', (e) => {
-    console.log(e.target.href);
+    if (e.target.href.includes('home')) {
+        selectItem(0)
+    }
+    if (e.target.href.includes('about')) {
+        selectItem(1)
+    }
+    if (e.target.href.includes('skills')) {
+        selectItem(2)
+    }
+    if (e.target.href.includes('projects')) {
+        selectItem(3)
+    }
+    if (e.target.href.includes('contact')) {
+        selectItem(4)
+    }
 })

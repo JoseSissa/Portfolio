@@ -25,6 +25,7 @@ body {
     margin: 0 auto;
     font-size: var(--font-medium);
     background-color: var(--background);
+    scroll-behavior: smooth;
 }
 
 .title {
@@ -32,6 +33,26 @@ body {
     font-size: var(--font-big);
     font-weight: 700;
     margin-bottom: 3rem;
+}
+.title-contrast {
+    padding: 4px 8px;
+    background-color: var(--contrast);
+    color: var(--background);
+    font-weight: 500;
+}
+.generate-text {
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 14ch;
+    animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from { width: 0; }
+}
+@keyframes blink {
+    50% { border-color: transparent; }
 }
 p {
     line-height: 3rem;
