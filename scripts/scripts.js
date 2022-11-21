@@ -54,8 +54,11 @@ if(window.screen.width < 2000) {
     })
 }
 
-changeLanguage.addEventListener('click', (e) => {
-    console.log(e.target.checked);
-    e.target.checked ? location.href = "../es/index.html" : "../index.html" 
+changeLanguage.addEventListener('click', (e) => {    
+    if(e.view.location.pathname.includes('es')) {
+        location.href = e.target.checked ? "../index.html" : "../es/index.html"
+    }else {
+        location.href = e.target.checked ? "../es/index.html" : "../index.html"
+    }
 })
 
