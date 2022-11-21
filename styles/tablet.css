@@ -1,1 +1,20 @@
-header,main{padding:0 8rem}header{height:80px}.about,.contact,.skills{padding:0}.projects-container{margin:5rem 0;grid-template-columns:repeat(2,1fr)}.contact{margin-bottom:0}
+main {
+    padding: 0 8rem;
+}
+header {
+    height: 80px;
+    padding: 0 8rem;
+}
+.about, .skills, .contact {
+    padding: 0;
+}
+.projects-container {
+    margin: 5rem 0;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contact {
+    margin-bottom: 0;
+}
+.contact_options {
+    justify-content: start;
+}
