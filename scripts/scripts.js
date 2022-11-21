@@ -15,6 +15,7 @@ showMenuButton.addEventListener('click', ()=>{
 menuList.addEventListener('click', ()=>{
     menu.classList.remove('show-menu');
     showMenuButton.classList.remove('toggle');
+    languageBox.classList.toggle('show-menu')
 })
 
 const selectedItem = (numItem) => {

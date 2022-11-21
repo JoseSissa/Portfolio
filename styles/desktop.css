@@ -62,3 +62,13 @@ section {
     left: 50%;
     transform: translate(-50%);
 }
+.language-box {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 50px;
+    transform: translateX(0%);
+}
+.contact_options {
+    justify-content: start;
+}
