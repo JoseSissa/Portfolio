@@ -1,1 +1,64 @@
-const buttonMenu=document.getElementById("button-menu"),menu=document.getElementById("menu"),menuList=document.getElementById("menu-list"),list=document.getElementById("menu-list"),boxes=document.querySelectorAll(".box");buttonMenu.addEventListener("click",()=>{menu.classList.toggle("show-menu"),buttonMenu.classList.toggle("toggle")}),menuList.addEventListener("click",()=>{menu.classList.remove("show-menu"),buttonMenu.classList.remove("toggle")});const selectedItem=e=>{for(let t=0;t<5;t++)list.children[t].children[0].classList.remove("item-selected");list.children[e].children[0].classList.add("item-selected")},callback=e=>{e.forEach(e=>{e.isIntersecting&&("Jose Rafael Sissa Mendoza"===e.target.innerText&&selectedItem(0),"About me"===e.target.innerText&&selectedItem(1),"Skills"===e.target.innerText&&selectedItem(2),"Projects"===e.target.innerText&&selectedItem(3),"Contact"===e.target.innerText&&selectedItem(4))})};if(window.screen.width<2e3){let e={root:null,rootMargin:"0px 0px -200px 0px",threshold:1},t=new IntersectionObserver(callback,e);boxes.forEach(e=>t.observe(e)),list.addEventListener("click",e=>{e.target.href.includes("home")&&selectedItem(0),e.target.href.includes("about")&&selectedItem(1),e.target.href.includes("skills")&&selectedItem(2),e.target.href.includes("projects")&&selectedItem(3),e.target.href.includes("contact")&&selectedItem(4)})}
+const showMenuButton = document.getElementById('button-menu');
+const languageBox = document.getElementById('language-box');
+const changeLanguage = document.getElementById('language');
+const menu = document.getElementById('menu');
+const menuList = document.getElementById('menu-list')
+
+const boxes = document.querySelectorAll('.box')
+
+showMenuButton.addEventListener('click', ()=>{
+    menu.classList.toggle('show-menu');
+    showMenuButton.classList.toggle('toggle');
+    languageBox.classList.toggle('show-menu')
+});
+
+menuList.addEventListener('click', ()=>{
+    menu.classList.remove('show-menu');
+    showMenuButton.classList.remove('toggle');
+})
+
+const selectedItem = (numItem) => {
+    for (let i = 0; i < 5; i++) {
+        menuList.children[i].children[0].classList.remove('item-selected')
+    }
+    menuList.children[numItem].children[0].classList.add('item-selected')
+}
+
+const callback = (entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            if(entry.target.innerText === "Jose Rafael Sissa Mendoza") { selectedItem(0) }
+            if(entry.target.innerText === "About me") { selectedItem(1) }
+            if(entry.target.innerText === "Skills") { selectedItem(2) }
+            if(entry.target.innerText === "Projects") { selectedItem(3) }
+            if(entry.target.innerText === "Contact") { selectedItem(4) }
+        }
+    })
+}
+if(window.screen.width < 2000) {
+    const options = {
+        root: null,
+        rootMargin: "0px 0px -200px 0px",
+        threshold: 1
+    }
+    
+    const observer = new IntersectionObserver(callback, options)
+    boxes.forEach(elem => observer.observe(elem))
+
+    menuList.addEventListener('click', (e) => {
+        if (e.target.href.includes('home')) { selectedItem(0) }
+        if (e.target.href.includes('about')) { selectedItem(1) }
+        if (e.target.href.includes('skills')) { selectedItem(2) }
+        if (e.target.href.includes('projects')) { selectedItem(3) }
+        if (e.target.href.includes('contact')) { selectedItem(4) }
+    })
+}
+
+changeLanguage.addEventListener('click', (e) => {    
+    if(e.view.location.pathname.includes('es')) {
+        location.href = e.target.checked ? "../index.html" : "../es/index.html"
+    }else {
+        location.href = e.target.checked ? "../es/index.html" : "../index.html"
+    }
+})
+
