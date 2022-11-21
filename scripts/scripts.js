@@ -1,25 +1,27 @@
-const buttonMenu = document.getElementById('button-menu');
+const showMenuButton = document.getElementById('button-menu');
+const languageBox = document.getElementById('language-box');
+const changeLanguage = document.getElementById('language');
 const menu = document.getElementById('menu');
-const menuList = document.getElementById('menu-list');
+const menuList = document.getElementById('menu-list')
 
-const list  = document.getElementById('menu-list')
 const boxes = document.querySelectorAll('.box')
 
-buttonMenu.addEventListener('click', ()=>{
+showMenuButton.addEventListener('click', ()=>{
     menu.classList.toggle('show-menu');
-    buttonMenu.classList.toggle('toggle');
+    showMenuButton.classList.toggle('toggle');
+    languageBox.classList.toggle('show-menu')
 });
 
 menuList.addEventListener('click', ()=>{
     menu.classList.remove('show-menu');
-    buttonMenu.classList.remove('toggle');
+    showMenuButton.classList.remove('toggle');
 })
 
 const selectedItem = (numItem) => {
     for (let i = 0; i < 5; i++) {
-        list.children[i].children[0].classList.remove('item-selected')
+        menuList.children[i].children[0].classList.remove('item-selected')
     }
-    list.children[numItem].children[0].classList.add('item-selected')
+    menuList.children[numItem].children[0].classList.add('item-selected')
 }
 
 const callback = (entries) => {
@@ -43,7 +45,7 @@ if(window.screen.width < 2000) {
     const observer = new IntersectionObserver(callback, options)
     boxes.forEach(elem => observer.observe(elem))
 
-    list.addEventListener('click', (e) => {
+    menuList.addEventListener('click', (e) => {
         if (e.target.href.includes('home')) { selectedItem(0) }
         if (e.target.href.includes('about')) { selectedItem(1) }
         if (e.target.href.includes('skills')) { selectedItem(2) }
@@ -51,4 +53,9 @@ if(window.screen.width < 2000) {
         if (e.target.href.includes('contact')) { selectedItem(4) }
     })
 }
+
+changeLanguage.addEventListener('click', (e) => {
+    console.log(e.target.checked);
+    e.target.checked ? location.href = "../es/index.html" : "../index.html" 
+})
 

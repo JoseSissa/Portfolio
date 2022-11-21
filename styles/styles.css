@@ -1,5 +1,5 @@
 :root {
-    --background: #1F1F24;
+    --background: #1f1f24;
     --contrast: #FFE01B;
     /* --contrast: #FCBA28; */
     /* --contrast: #F9DC3E; */
@@ -128,10 +128,61 @@ section {
     height: 100vh;
     padding: 30px 25px;
     text-align: center;
-    background-color: rgba(0 0 0 / .9);
+    background-color: rgba(31 31 36 / .9);
     transform: translateX(-100%);
     transition: transform 0.3s;
     z-index: 1;
+}
+.language-box {
+    position: relative;
+    bottom: -450px;
+    max-width: 160px;
+    margin: 0 auto;
+    transform: translateX(-200%);
+    transition: transform 0.3s;
+    z-index: 2;
+}
+.language-box span {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.language {
+    position: relative;
+    top: -6px;
+    width: 0px;
+    border: none;
+    background: transparent;
+    border: none;
+}
+.language::before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    width: 50px;
+    height: 25px;
+    background: #04AA6D;
+    border-radius: 25px;
+}
+.language::after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    width: 25px;
+    height: 25px;
+    background: url('../assets/icons/colombia.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    border: 1px solid var(--background);
+    box-sizing: border-box;
+}
+.language:checked::after {
+    left: 0px;
+    background: url('../assets/icons/united-states-of-america.svg');
+}
+.language:checked::before {
+    background-color: #04AA6D;
 }
 .show-menu {
     transform: translateX(0px);
