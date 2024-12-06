@@ -1,0 +1,38 @@
+---
+import { PROJECTS } from '../constants/projects.js'
+import Pill from './Pill.astro'
+import TitleSection from './TitleSection.astro'
+---
+
+<section class="mb-16" id="proyects">
+    <TitleSection>Proyectos</TitleSection>
+    {
+        PROJECTS.map((project, index) => {
+            return (
+                <article>
+                    <h3 class="mb-2 font-bold">
+                        <a href={project.demo}>
+                            {project.title}
+                            <img src="/link_icon.svg" class="inline-block w-4 h-4 svg-path invert" alt="Flecha que indica que el texto anterior es un link">
+                        </a>
+                    </h3>
+                    <p class="mb-3 font-light">
+                        {project.description}
+                    </p>
+                    <div class="text-center">
+                        <img class="w-52 mb-3" src="/favicon.svg" alt="Icono de Astro">
+                    </div>
+                    <ul class="flex flex-wrap">
+                        {
+                            project.technologies.map((tecnologia, i) => (
+                                <Pill>
+                                    {tecnologia}
+                                </Pill>
+                            ))
+                        }
+                    </ul>
+                </article>
+            )
+        })
+    }
+</section>

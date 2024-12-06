@@ -1,0 +1,83 @@
+---
+import HomeIcon from "./icons/HomeIcon.astro";
+import MoonIcon from "./icons/MoonIcon.astro";
+import ProfileIcon from "./icons/ProfileIcon.astro";
+import ProjectIcon from "./icons/ProjectIcon.astro";
+import SunIcon from "./icons/SunIcon.astro";
+import WorkIcon from "./icons/WorkIcon.astro";
+---
+
+<nav class={`
+    fixed bottom-10 left-0 w-full h-10 z-10
+    lg:hidden
+`}>
+    <ul class="flex gap-x-1 max-w-max h-full mx-auto px-1 rounded-full bg-colorPrimary text-background">
+        <li>
+            <a href="#home" class="flex justify-center items-center h-full px-3">
+                <HomeIcon class="w-6 h-6" />
+            </a>
+        </li>
+        <li>
+            <a href="#experience" class="flex justify-center items-center h-full px-3">
+                <WorkIcon class="w-6 h-6" />
+            </a>
+        </li>
+        <li>
+            <a href="#proyects" class="flex justify-center items-center h-full px-3">
+                <ProjectIcon class="w-6 h-6" />
+            </a>
+        </li>
+        <li>
+            <a href="#about" class="flex justify-center items-center h-full px-3">
+                <ProfileIcon class="w-6 h-6" />
+            </a>
+        </li>
+        <span class="my-2 border border-background" aria-hidden="true"></span>
+        <li>
+            <button class="flex justify-center items-center h-full px-3" id="darkMode">
+                <SunIcon class="w-6 h-6 hidden" id="sunIcon" />
+                <MoonIcon class="w-6 h-6 hidden" id="moonIcon" />
+                <span class="sr-only">Toggle theme - Dark mode</span>
+            </button>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    const sunIcon = document.getElementById('sunIcon')
+    const moonIcon = document.getElementById('moonIcon')
+
+    const getThemePreference = () => {
+        if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+            return localStorage.getItem("theme")
+        }
+        return window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light"
+    }
+
+    const themeDark = getThemePreference() === "dark"
+    themeDark 
+        ? sunIcon.classList.replace("hidden", "block")
+        : moonIcon.classList.replace("hidden", "block")
+    document.documentElement.classList[themeDark ? "add" : "remove"]("dark")
+
+    const handleToglleClick = () => {
+        const htmlElement = document.documentElement
+        htmlElement.classList.toggle("dark")
+        const isDark = htmlElement.classList.contains("dark") 
+        localStorage.setItem("theme", isDark ? "dark" : "light")
+
+        if(isDark) {
+            sunIcon.classList.replace("hidden", "block")
+            moonIcon.classList.replace("block", "hidden")
+        } else {
+            moonIcon.classList.replace("hidden", "block")
+            sunIcon.classList.replace("block", "hidden")
+        }
+    }
+
+    document
+        .getElementById("darkMode")
+        .addEventListener('click', handleToglleClick)
+</script>

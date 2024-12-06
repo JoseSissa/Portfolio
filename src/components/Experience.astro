@@ -1,0 +1,40 @@
+---
+import { EXPERIENCE_JOBS } from '../constants/experience.js'
+import Pill from './Pill.astro'
+import TitleSection from './TitleSection.astro'
+---
+<section class="mb-16" id="experience">
+    <TitleSection>Experiencia</TitleSection>
+    <div>
+        <ol>
+            {
+                EXPERIENCE_JOBS.map((job, index) => {
+                    return(
+                        <li class="mb-12">
+                            <div>
+                                <header class="mb-2 text-xs font-light">{job.fecha}</header>
+                                <div>
+                                    <h3 class="mb-2 font-bold">
+                                        {job.cargo} en {job.empresa}
+                                    </h3>
+                                    <p class="mb-3 font-light">
+                                        {job.explicacion_cargo}
+                                    </p>
+                                    <ul class="flex flex-wrap">
+                                        {
+                                            job.technologies.map((tecnologia, i) => (
+                                                <Pill>
+                                                    {tecnologia}
+                                                </Pill>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    )
+                })
+            }
+        </ol>
+    </div>
+</section>
