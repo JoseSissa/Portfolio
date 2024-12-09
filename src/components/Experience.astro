@@ -8,19 +8,23 @@ import TitleSection from './TitleSection.astro'
     <div>
         <ol>
             {
-                EXPERIENCE_JOBS.map((job, index) => {
+                EXPERIENCE_JOBS.map(job => {
                     return(
                         <li class="mb-12">
-                            <div>
-                                <header class="mb-2 text-xs font-light">{job.fecha}</header>
+                            <div class="flex gap-x-4">
+                                <header class="min-w-24 text-xs font-light">{job.date}</header>
                                 <div>
-                                    <h3 class="mb-2 font-bold">
-                                        {job.cargo} en {job.empresa}
+                                    <h3 class="font-bold">
+                                        {job.position} en {job.company}
                                     </h3>
-                                    <p class="mb-3 font-light">
-                                        {job.explicacion_cargo}
-                                    </p>
-                                    <ul class="flex flex-wrap">
+                                    {
+                                        job.summary.map(text => {
+                                            return (
+                                                <p class="mb-3 font-light" set:html={text}></p>
+                                            )
+                                        })
+                                    }
+                                    <ul class="flex flex-wrap gap-x-2">
                                         {
                                             job.technologies.map((tecnologia, i) => (
                                                 <Pill>
