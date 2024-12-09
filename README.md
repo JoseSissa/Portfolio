@@ -75,3 +75,10 @@ background: #001423
 | `Fuentes    `             | https://fontsource.org/                          |
 | `Background Gradient    ` | https://bg.ibelick.com/                          |
 | `Icons    `               | https://yesicon.app/                             |
+
+
+Utils:
+https://freesets.dev/
+https://coolcontrast.vercel.app/
+https://metatags.io/
+https://svgl.app/
