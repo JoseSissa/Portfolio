@@ -14,5 +14,12 @@
     "@fontsource/onest": "^5.1.0",
     "astro": "^5.0.3",
     "tailwindcss": "^3.4.16"
+  },
+  
+  "devDependencies": {
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }
