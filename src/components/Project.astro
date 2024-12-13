@@ -1,46 +1,44 @@
 ---
-import { Image } from 'astro:assets';
-import { PROJECTS } from '../constants/projects.js'
-import Pill from './Pill.astro'
-import TitleSection from './TitleSection.astro'
+import { Image } from "astro:assets";
+import { PROJECTS } from "../constants/projects.js";
+import Pill from "./Pill.astro";
+import TitleSection from "./TitleSection.astro";
 ---
 
 <section class="mb-16" id="proyects">
-    <TitleSection>Proyectos</TitleSection>
-    {
-        PROJECTS.map(project => {
-            return (
-                <a class="flex flex-col lg:flex-row gap-x-4 mb-5" href={project.demo} target="_blank" rel="nofollow noreferrer" title="Demostración de la página web">
-                    <div class="min-w-40 max-w-52 lg:max-w-40 order-last lg:order-first">
-                        <Image 
-                            src={project.image_src}
-                            alt={project.image_alt}
-                            width={1322}
-                            height={922}
-                            loading='lazy'
-                            decoding='async'
-                            class="rounded"
-                        />
-                    </div>
-                    <div>
-                        <h3 class="mb-2 font-bold">
-                            {project.title}
-                        </h3>
-                        <p class="mb-3 font-light">
-                            {project.description}
-                        </p>
-                        {/* <ul class="flex flex-wrap gap-x-2">
-                            {
-                                project.technologies.map((tecnologia, i) => (
-                                    <Pill>
-                                        {tecnologia}
-                                    </Pill>
-                                ))
-                            }
-                        </ul> */}
-                    </div>
-                </a>
-            )
-        })
-    }
+  <TitleSection>Proyectos</TitleSection>
+  {
+    PROJECTS.map((project) => {
+      return (
+        <a
+          class="flex flex-col lg:flex-row gap-x-4 mb-10"
+          href={project.demo}
+          target="_blank"
+          rel="nofollow noreferrer"
+          title="Demostración de la página web"
+        >
+          <div class="min-w-40 max-w-52 lg:max-w-40 order-last lg:order-first">
+            <Image
+              src={project.image_src}
+              alt={project.image_alt}
+              width={1322}
+              height={922}
+              loading="lazy"
+              decoding="async"
+              class="rounded aspect-[160/99]"
+            />
+          </div>
+          <div>
+            <h3 class="mb-2 font-bold">{project.title}</h3>
+            <p class="mb-3 font-light">{project.description}</p>
+            <ul class="flex flex-wrap gap-x-2">
+              {project.technologies.map((tecnologia, i) => (
+                <Pill>{tecnologia}</Pill>
+              ))}
+            </ul>
+          </div>
+        </a>
+      );
+    })
+  }
 </section>
