@@ -5,8 +5,13 @@ export default {
     extend: {
       colors: {
         background: 'var(--background)',
+        backgroundSecondary: 'var(--background-secondary)',
+        backgroundThird: 'var(--background-third)',
         colorPrimary: 'var(--color-primary)',
-        test1: 'var(--test-1)'
+        colorSecondary: 'var(--color-secondary)',
+        myBlue: 'var(--blue)',
+        myBlue2: 'var(--blue2)',
+        borderBox: 'var(--border-box)'
       }
     }
   },

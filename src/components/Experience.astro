@@ -1,42 +1,44 @@
 ---
-import { EXPERIENCE_JOBS } from '../constants/experience.js'
-import Pill from './Pill.astro'
-import TitleSection from './TitleSection.astro'
+import { EXPERIENCE_JOBS } from "../constants/experience.js";
+import Pill from "./Pill.astro";
+import TitleSection from "./TitleSection.astro";
 ---
+
 <section class="mb-16" id="experience">
     <TitleSection>Experiencia</TitleSection>
     <div>
         <ol>
             {
-                EXPERIENCE_JOBS.map(job => {
-                    return(
+                EXPERIENCE_JOBS.map((job) => {
+                    return (
                         <li class="mb-12">
                             <div class="flex flex-col lg:flex-row gap-x-4">
-                                <header class="min-w-40 max-w-40 text-xs font-light">{job.date}</header>
+                                <header class="min-w-40 max-w-40 text-xs text-colorPrimary">
+                                    {job.date}
+                                </header>
                                 <div>
                                     <h3 class="font-bold">
                                         {job.position} en {job.company}
                                     </h3>
-                                    {
-                                        job.summary.map(text => {
-                                            return (
-                                                <p class="mb-3 font-light" set:html={text}></p>
-                                            )
-                                        })
-                                    }
+                                    {job.summary.map((text) => {
+                                        return (
+                                            <p
+                                                class="mb-3 text-colorSecondary"
+                                                set:html={text}
+                                            />
+                                        );
+                                    })}
                                     <ul class="flex flex-wrap gap-x-2">
-                                        {
-                                            job.technologies.map((tecnologia, i) => (
-                                                <Pill>
-                                                    {tecnologia}
-                                                </Pill>
-                                            ))
-                                        }
+                                        {job.technologies.map(
+                                            (tecnologia, i) => (
+                                                <Pill>{tecnologia}</Pill>
+                                            )
+                                        )}
                                     </ul>
                                 </div>
                             </div>
                         </li>
-                    )
+                    );
                 })
             }
         </ol>

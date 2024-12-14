@@ -1,10 +1,10 @@
 ---
-import '@fontsource/onest/300.css';
-import '@fontsource/onest/500.css';
-import '@fontsource/onest/700.css';
+import "@fontsource/onest/300.css";
+import "@fontsource/onest/500.css";
+import "@fontsource/onest/700.css";
 interface Props {
-	title: string;
-	description: string;
+    title: string;
+    description: string;
 }
 
 const { description, title } = Astro.props;
@@ -12,52 +12,61 @@ const { description, title } = Astro.props;
 
 <!doctype html>
 <html lang="en" class="backgroundTransition">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="relative h-full w-full leading-5 md:leading-normal">
-		<!-- Background -->
-		<!-- <div class="fixed bottom-0 left-[-20%] right-0 top-[-10%] h-[800px] w-[800px] rounded-full lg:bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div> -->
-		<!-- <div class="fixed bottom-0 right-[-20%] top-[43%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div> -->
-		<!-- Background -->
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body class="relative h-full w-full leading-5 md:leading-normal">
+        <!-- Background -->
+        <!-- <div class="fixed bottom-0 left-[-20%] right-0 top-[-10%] h-[800px] w-[800px] rounded-full lg:bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div> -->
+        <!-- <div class="fixed bottom-0 right-[-20%] top-[43%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div> -->
+        <!-- Background -->
+        <slot />
+    </body>
 </html>
 <style is:global>
-	:root {
-		/* --yellow-one: hsl(57, 100%, 50%);
-		--yellow-two: #fff773; */
-		/* --background: #020617; */
-		--background: hsl(0, 0%, 87%);
-		/* --color-primary: hsl(206, 100%, 7%); */
-		--color-primary: #000;
-		--test-1 : rgb(254, 249, 195);
-	}
+    :root {
+        --background: hsla(0, 0%, 98%, 1);
+        --background-secondary: hsla(0, 0%, 100%, 1);
+        --background-third: hsla(0, 0%, 95%, 0.8);
+        --color-primary: hsla(0, 0%, 9%, 1);
+        --color-secondary: hsla(0, 0%, 40%, 1);
+        /* --blue: hsla(210, 100%, 66%, 1); */
+        --blue: #fff773;
+        --blue2: hsl(57, 100%, 50%);
+        --border-box: rgba(255, 255, 255, 0.15);
+        --yellow-one: hsl(57, 100%, 50%);
+        --yellow-two: #fff773;
+        --test-1: rgb(254, 249, 195);
+    }
 
-	.dark {
-		/* --background: hsl(206, 100%, 7%); */
-		--background: #000;
-		--color-primary: hsl(0, 0%, 87%);
-	}
+    .dark {
+        /* --background: hsl(206, 100%, 7%); */
+        --background: hsla(0, 0%, 0%, 1);
+        --background-secondary: hsla(0, 0%, 4%, 1);
+        --background-third: hsla(0, 0%, 10%, 1);
+        --color-primary: hsla(0, 0%, 93%, 1);
+        --color-secondary: hsla(0, 0%, 65%, 1);
+    }
 
-	.backgroundTransition {
-		transition-property: background-color, border-color, text-decoration-color, fill, stroke;
-    	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    	transition-duration: 300ms;
-	}
+    .backgroundTransition {
+        transition-property: background-color, border-color,
+            text-decoration-color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+    }
 
-	html {
-		font-family: 'Onest', system-ui, sans-serif;
-		background: var(--background);
-		color: var(--color-primary);
-		scroll-behavior: smooth;
-	}
-	body {
-		min-height: 100vh;
-	}
+    html {
+        font-family: "Onest", system-ui, sans-serif;
+        background: var(--background);
+        color: var(--color-primary);
+        scroll-behavior: smooth;
+    }
+    body {
+        min-height: 100vh;
+    }
 </style>

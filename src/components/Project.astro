@@ -11,7 +11,7 @@ import TitleSection from "./TitleSection.astro";
     PROJECTS.map((project) => {
       return (
         <a
-          class="flex flex-col lg:flex-row gap-x-4 mb-10"
+          class="flex flex-col lg:flex-row gap-x-4 mb-10 bg-backgroundSecondary"
           href={project.demo}
           target="_blank"
           rel="nofollow noreferrer"
@@ -30,7 +30,7 @@ import TitleSection from "./TitleSection.astro";
           </div>
           <div>
             <h3 class="mb-2 font-bold">{project.title}</h3>
-            <p class="mb-3 font-light">{project.description}</p>
+            <p class="mb-3 font-light text-colorSecondary">{project.description}</p>
             <ul class="flex flex-wrap gap-x-2">
               {project.technologies.map((tecnologia, i) => (
                 <Pill>{tecnologia}</Pill>
