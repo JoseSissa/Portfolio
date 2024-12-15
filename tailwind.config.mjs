@@ -11,7 +11,8 @@ export default {
         colorSecondary: 'var(--color-secondary)',
         myBlue: 'var(--blue)',
         myBlue2: 'var(--blue2)',
-        borderBox: 'var(--border-box)'
+        borderBox: 'var(--border-box)',
+        borderBoxActive: 'var(--border-box-active)'
       }
     }
   },

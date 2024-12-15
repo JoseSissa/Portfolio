@@ -11,12 +11,13 @@ import TitleSection from "./TitleSection.astro";
     PROJECTS.map((project) => {
       return (
         <a
-          class="flex flex-col lg:flex-row gap-x-4 mb-10 bg-backgroundSecondary"
+          class="group relative flex flex-col lg:flex-row gap-x-4 mb-12"
           href={project.demo}
           target="_blank"
           rel="nofollow noreferrer"
           title="Demostración de la página web"
         >
+          <div class="absolute hidden group-hover:block -inset-x-4 -inset-y-4 rounded-lg border border-borderBoxActive bg-backgroundSecondary -z-10"></div>
           <div class="min-w-40 max-w-52 lg:max-w-40 order-last lg:order-first">
             <Image
               src={project.image_src}
