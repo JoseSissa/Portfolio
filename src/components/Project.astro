@@ -17,7 +17,7 @@ import TitleSection from "./TitleSection.astro";
           rel="nofollow noreferrer"
           title="Demostración de la página web"
         >
-          <div class="absolute hidden group-hover:block -inset-x-4 -inset-y-4 rounded-lg border border-borderBoxActive bg-backgroundSecondary -z-10"></div>
+          <div class="absolute block -inset-x-4 -inset-y-4 rounded-lg border border-borderBox group-hover:border-borderBoxActive bg-backgroundSecondary shadowBox -z-10 backgroundTransition"></div>
           <div class="min-w-40 max-w-52 lg:max-w-40 order-last lg:order-first">
             <Image
               src={project.image_src}
@@ -30,7 +30,7 @@ import TitleSection from "./TitleSection.astro";
             />
           </div>
           <div>
-            <h3 class="mb-2 font-bold">{project.title}</h3>
+            <h3 class="mb-2 font-bold text-xl">{project.title}</h3>
             <p class="mb-3 font-light text-colorSecondary">{project.description}</p>
             <ul class="flex flex-wrap gap-x-2">
               {project.technologies.map((tecnologia, i) => (

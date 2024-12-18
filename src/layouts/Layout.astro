@@ -32,13 +32,17 @@ const { description, title } = Astro.props;
     :root {
         --background: hsla(0, 0%, 98%, 1);
         --background-secondary: hsla(0, 0%, 100%, 1);
-        --background-third: hsla(0, 0%, 95%, 0.8);
+        --background-third: hsla(0, 0%, 90%, 1);
         --color-primary: hsla(0, 0%, 9%, 1);
         --color-secondary: hsla(0, 0%, 40%, 1);
-        --border-box: rgba(255, 255, 255, 0.15);
-        --border-box-active: hsla(0, 0%, 27%, 1);
-        /* --blue: hsla(210, 100%, 66%, 1); */
-        --blue: #fff773;
+        --blue: #0070f3;
+
+        /* #d4d4d433 */
+        --border-box: rgba(0, 0, 0, 0.08);
+        --border-box-active: hsla(0, 0%, 75%, 1);
+
+
+        /* --blue: #fff773; */
         --blue2: hsl(57, 100%, 50%);
         --yellow-one: hsl(57, 100%, 50%);
         --yellow-two: #fff773;
@@ -52,6 +56,10 @@ const { description, title } = Astro.props;
         --background-third: hsla(0, 0%, 10%, 1);
         --color-primary: hsla(0, 0%, 93%, 1);
         --color-secondary: hsla(0, 0%, 65%, 1);
+        --blue: hsla(210, 100%, 66%, 1);
+
+        --border-box: rgba(255, 255, 255, 0.05);
+        --border-box-active: hsl(0, 0%, 30%);
     }
 
     .backgroundTransition {
@@ -73,6 +81,10 @@ const { description, title } = Astro.props;
             background-size: 100% 2px;
             background-position: 0 100%;
         }
+    }
+
+    .shadowBox {
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 2px 0px;
     }
 
     html {
