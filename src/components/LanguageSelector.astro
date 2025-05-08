@@ -1,0 +1,39 @@
+---
+import ESflag from './icons/ESflag.astro';
+import ENflag from './icons/ENflag.astro';
+
+import { ui } from '@/i18n/ui';
+import { getLangFromUrl, translateRoute } from '@/i18n/utils';
+import type { LanguageKeyRoutes, Language, Routes } from '@/types/types';
+type RouteKey<T extends Language> = keyof Routes[T];
+
+const pathname = Astro.url.pathname;
+const lang: LanguageKeyRoutes = getLangFromUrl(Astro.url);
+console.log({lang});
+
+let route = "";
+
+if (pathname.split("/").length === 3) {
+    [, , route] = pathname.split("/");
+} else if (pathname.split("/").length === 2) {
+    [, route] = pathname.split("/");
+}
+
+const getHref = (key: Language) => route ? translateRoute(key, lang, route as RouteKey<Language>) : ui[key]["nav.inicio"];
+---
+
+{
+    Object.keys(ui).map((key) => {
+        if (key === lang) return            
+        return (
+                <a 
+                    class="flex justify-start items-center h-full gap-2 px-2" 
+                    href={getHref(key as Language)}
+                >
+                    {
+                        lang === "es" ? <ENflag /> : <ESflag />
+                    }
+                </a>
+        )
+    })
+}

@@ -5,37 +5,42 @@ import ProfileIcon from "./icons/ProfileIcon.astro";
 import ProjectIcon from "./icons/ProjectIcon.astro";
 import SunIcon from "./icons/SunIcon.astro";
 import WorkIcon from "./icons/WorkIcon.astro";
+import LanguageSelector from "./LanguageSelector.astro";
 ---
 
 <nav class={`fixed bottom-10 left-0 w-full h-11 z-10`}>
     <ul class="flex gap-x-1 max-w-max h-full mx-auto px-1 rounded-full bg-colorPrimary text-background">
         <li>
-            <a href="#home" class="flex justify-center items-center h-full px-3" aria-label="Ir a Inicio">
-                <HomeIcon class="w-6 h-6" />
+            <a href="#home" class="flex justify-center items-center h-full px-2 lg:px-3" aria-label="Ir a Inicio">
+                <HomeIcon class="w-5 h-5 lg:w-6 lg:h-6" />
             </a>
         </li>
         <li>
-            <a href="#experience" class="flex justify-center items-center h-full px-3" aria-label="Ir a la sección de Experiencia">
-                <WorkIcon class="w-6 h-6" />
+            <a href="#experience" class="flex justify-center items-center h-full px-2 lg:px-3" aria-label="Ir a la sección de Experiencia">
+                <WorkIcon class="w-5 h-5 lg:w-6 lg:h-6" />
             </a>
         </li>
         <li>
-            <a href="#proyects" class="flex justify-center items-center h-full px-3" aria-label="Ir a la sección de Proyectos">
-                <ProjectIcon class="w-6 h-6" />
+            <a href="#proyects" class="flex justify-center items-center h-full px-2 lg:px-3" aria-label="Ir a la sección de Proyectos">
+                <ProjectIcon class="w-5 h-5 lg:w-6 lg:h-6" />
             </a>
         </li>
         <li>
-            <a href="#about" class="flex justify-center items-center h-full px-3" aria-label="Ir a la sección de sobre mí">
-                <ProfileIcon class="w-6 h-6" />
+            <a href="#about" class="flex justify-center items-center h-full px-2 lg:px-3" aria-label="Ir a la sección de sobre mí">
+                <ProfileIcon class="w-5 h-5 lg:w-6 lg:h-6" />
             </a>
         </li>
         <span class="my-2 border border-background" aria-hidden="true"></span>
         <li>
-            <button class="flex justify-center items-center h-full px-3" id="darkMode">
-                <SunIcon class="w-6 h-6 hidden" id="sunIcon" />
-                <MoonIcon class="w-6 h-6 hidden" id="moonIcon" />
+            <button class="flex justify-center items-center h-full px-2 lg:px-3" id="darkMode">
+                <SunIcon class="w-5 h-5 lg:w-6 lg:h-6 hidden" id="sunIcon" />
+                <MoonIcon class="w-5 h-5 lg:w-6 lg:h-6 hidden" id="moonIcon" />
                 <span class="sr-only">Toggle theme - Dark mode</span>
             </button>
+        </li>
+        <span class="my-2 border border-background" aria-hidden="true"></span>
+        <li>
+            <LanguageSelector />
         </li>
     </ul>
 </nav>
