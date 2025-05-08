@@ -1,0 +1,19 @@
+<div
+    id="cursor-light" 
+    class="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+    style="background: radial-gradient(500px at 480px 565px, rgba(124, 130, 145, 0.15), transparent 80%);"
+>
+</div>
+
+<script>
+    const lightElement = document.getElementById("cursor-light");
+  
+    document.addEventListener("mousemove", (e) => {
+        const x = e.clientX + window.scrollX;;
+        const y = e.clientY + window.scrollY;
+        console.log({ x, y });
+        
+  
+        lightElement.style.background = `radial-gradient(500px at ${x}px ${y}px, rgba(124, 130, 145, 0.15), transparent 80%)`;
+    });
+</script>

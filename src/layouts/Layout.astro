@@ -2,6 +2,9 @@
 import "@fontsource/onest/300.css";
 import "@fontsource/onest/500.css";
 import "@fontsource/onest/700.css";
+
+import Head from "@/components/Head.astro";
+import CursorLight from "@/components/CursorLight.astro";
 interface Props {
     title: string;
     description: string;
@@ -12,43 +15,15 @@ const { description, title } = Astro.props;
 
 <!doctype html>
 <html lang="es" class="backgroundTransition">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content={description} />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="author" content="Jose Rafael Sissa Mendoza">
-        
-        <link rel="icon" type="image/x-icon" href="/favicon.ico">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
-        <meta property="og:title" content="Jose Sissa | Desarrollador y Programador Web">
-        <meta property="og:description" content="Portafolio donde se evidencia mi experiencia y proyectos en el desarrollo y la programación web.">
-        <meta property="og:image" content="https://jose-sissa.vercel.app/og.jpg">
-        <meta property="og:url" content="https://jose-sissa.vercel.app/">
-        <meta property="og:type" content="website">
-
-        <meta name="twitter:title" content="Jose Sissa | Desarrollador y Programador Web">
-        <meta property="twitter:title" content="Jose Sissa | Desarrollador y Programador Web">
-        <meta name="twitter:image" content="https://jose-sissa.vercel.app/og.jpg">
-        <meta property="twitter:image" content="https://jose-sissa.vercel.app/og.jpg">
-        <meta name="twitter:description" content="Portafolio donde se evidencia mi experiencia y proyectos en el desarrollo y la programación web.">
-        <meta property="twitter:description" content="Portafolio donde se evidencia mi experiencia y proyectos en el desarrollo y la programación web.">
-        <meta property="twitter:url" content="https://jose-sissa.vercel.app/">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="twitter:card" content="summary_large_image">
-
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-    </head>
+    <Head title={title} description={description} />
     <body class="relative h-full w-full leading-5 md:leading-normal">
+        <CursorLight />
         <slot />
     </body>
 </html>
 <style is:global>
     :root {
-        --background: hsla(0, 0%, 98%, 1);
+        --background: hsla(0, 0%, 95%, 1);
         --background-secondary: hsla(0, 0%, 100%, 1);
         --background-third: hsla(0, 0%, 90%, 1);
         --color-primary: hsla(0, 0%, 9%, 1);
@@ -115,3 +90,5 @@ const { description, title } = Astro.props;
         min-height: 100vh;
     }
 </style>
+
+
