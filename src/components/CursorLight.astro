@@ -9,11 +9,8 @@
     const lightElement = document.getElementById("cursor-light");
   
     document.addEventListener("mousemove", (e) => {
-        const x = e.clientX + window.scrollX;;
+        const x = e.clientX + window.scrollX;
         const y = e.clientY + window.scrollY;
-        console.log({ x, y });
-        
-  
         lightElement.style.background = `radial-gradient(500px at ${x}px ${y}px, rgba(124, 130, 145, 0.15), transparent 80%)`;
     });
 </script>
