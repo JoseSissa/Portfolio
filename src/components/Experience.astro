@@ -1,11 +1,29 @@
 ---
-import { EXPERIENCE_JOBS } from "../constants/experience.js";
+// import { EXPERIENCE_JOBS } from "../constants/experience.js";
 import Pill from "./Pill.astro";
 import TitleSection from "./TitleSection.astro";
+
+import { geti18n } from '@/i18n';
+const { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
+
+const EXPERIENCE_JOBS = [
+  {
+    date: i18n.EXPERIENCE.JOBS[0].DATE,
+    company: i18n.EXPERIENCE.JOBS[0].COMPANY,
+    web: i18n.EXPERIENCE.JOBS[0].WEB,
+    position: i18n.EXPERIENCE.JOBS[0].POSITION,
+    summary: [
+        i18n.EXPERIENCE.JOBS[0].SUMMARY[0],
+        i18n.EXPERIENCE.JOBS[0].SUMMARY[1],
+    ],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Docker', 'Laravel', 'Astro', 'Tailwind CSS']
+  }
+]
 ---
 
 <section class="mb-16" id="experience">
-    <TitleSection>Experiencia</TitleSection>
+    <TitleSection>{i18n.EXPERIENCE.TITLE}</TitleSection>
     <div>
         <ol>
             {

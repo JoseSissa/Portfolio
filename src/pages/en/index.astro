@@ -6,15 +6,11 @@ import Project from "@/components/Project.astro";
 import Header from "@/components/Header.astro";
 import FloatMenu from "@/components/FloatMenu.astro";
 import Footer from "@/components/Footer.astro";
-
-import { geti18n } from '@/i18n';
-const { currentLocale } = Astro;
-const i18n = geti18n({ currentLocale });
 ---
 
 <Layout
-  title={i18n.PAGE_TITLE}
-  description={i18n.PAGE_DESCRIPTION}
+  title="Jose Sissa - Desarrollador y Programador Web"
+  description="Ingeniero de Sistemas, Desarrollador y Programador Web con enfoque en el desarrollo Front-end."
 >
   <div>
     <div

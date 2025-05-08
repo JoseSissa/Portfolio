@@ -4,6 +4,10 @@ interface Props {
     address: string;
 }
 const { href, address } = Astro.props
+
+import { geti18n } from '@/i18n';
+const { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
 ---
 <a href={href} 
     target="_blank"
@@ -17,8 +21,8 @@ const { href, address } = Astro.props
         hover:text-colorPrimary
         transition
     "
-    title=`Link a mi ${address}`
-    aria-label="Enlace a la página web"
+    title=`${i18n.SOCIAL_PILL_TITLE} ${address}`
+    aria-label={`${i18n.SOCIAL_PILL_ARIA_LABEL} ${address}`}
 >
     <slot />
 </a>

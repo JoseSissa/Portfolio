@@ -1,6 +1,12 @@
+---
+import { geti18n } from '@/i18n';
+const { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
+---
+
 <footer class="border-t border-borderBoxActive pt-16 text-colorSecondary text-xs">
   <p>
-    Diseño inspirado en el portafolio de
+    {i18n.FOOTER.TEXT_ONE}
     <a
       class="font-bold text-colorPrimary underline-transition"
       href="https://brittanychiang.com/"
@@ -12,21 +18,21 @@
     </a>
   </p>
   <p>
-    Construido con
+    {i18n.FOOTER.TEXT_TWO}
     <a
       class="font-bold text-colorPrimary underline-transition"
       href="https://astro.build/"
       target="_blank"
       rel="nofollow noreferrer"
       title="Web de Astro">Astro</a
-    > y
+    > {i18n.FOOTER.TEXT_AND}
     <a
       class="font-bold text-colorPrimary underline-transition"
       href="https://tailwindcss.com/"
       target="_blank"
       rel="nofollow noreferrer"
       title="Web de Tailwind CSS">Tailwind CSS</a
-    >, desplegado en
+    >, {i18n.FOOTER.TEXT_THREE}
     <a
       class="font-bold text-colorPrimary underline-transition"
       href="https://vercel.com/"
@@ -36,6 +42,6 @@
     >.
   </p>
   <p>
-    Algunos proyectos fueron hechos siguiendo la guía de <a class="font-bold text-colorPrimary underline-transition" href="https://github.com/midudev" target="_blank" rel="nofollow noreferrer" title="GitHub de Midudev">Midudev</a>.
+    {i18n.FOOTER.TEXT_FOUR} <a class="font-bold text-colorPrimary underline-transition" href="https://github.com/midudev" target="_blank" rel="nofollow noreferrer" title="GitHub de Midudev">Midudev</a>.
   </p>
 </footer>

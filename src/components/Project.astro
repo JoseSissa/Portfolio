@@ -1,12 +1,43 @@
 ---
 import { Image } from "astro:assets";
-import { PROJECTS } from "../constants/projects.js";
 import Pill from "./Pill.astro";
 import TitleSection from "./TitleSection.astro";
+
+import { geti18n } from '@/i18n';
+const { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
+
+const PROJECTS = [
+  {
+    title: i18n.PROJECTS.PROJECTS_LIST[0].TITLE,
+    description: i18n.PROJECTS.PROJECTS_LIST[0].DESCRIPTION,
+    image_alt: i18n.PROJECTS.PROJECTS_LIST[0].IMAGE_ALT,
+    image_src: "/images/projects/cover/velada-web.webp",
+    demo: "https://3s-velada-2024.vercel.app/",
+    technologies: ['Astro', 'Tailwind CSS', 'JavaScript', 'Typescript', 'Turso']
+  },
+  {
+    title: i18n.PROJECTS.PROJECTS_LIST[1].TITLE,
+    description: i18n.PROJECTS.PROJECTS_LIST[1].DESCRIPTION,
+    image_alt: i18n.PROJECTS.PROJECTS_LIST[1].IMAGE_ALT,
+    image_src: "/images/projects/cover/esland-web.webp",
+    demo: "https://3s-esland-2024.vercel.app/",
+    technologies: ['Astro', 'Tailwind CSS', 'JavaScript', 'Typescript', 'Turso']
+  },
+  {
+    title: i18n.PROJECTS.PROJECTS_LIST[2].TITLE,
+    description: i18n.PROJECTS.PROJECTS_LIST[2].DESCRIPTION,
+    image_alt: i18n.PROJECTS.PROJECTS_LIST[2].IMAGE_ALT,
+    image_src: "/images/projects/cover/velada-landing.webp",
+    demo: "https://astro-khaki-nine.vercel.app/",
+    technologies: ['Astro', 'Tailwind CSS', 'JavaScript', 'Three JS']
+  }
+]
+
 ---
 
 <section class="mb-16" id="proyects">
-  <TitleSection>Proyectos</TitleSection>
+  <TitleSection>{i18n.PROJECTS.TITLE}</TitleSection>
   {
     PROJECTS.map((project) => {
       return (
