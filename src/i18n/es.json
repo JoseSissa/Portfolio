@@ -1,0 +1,60 @@
+{
+    "PAGE_TITLE": "Jose Sissa - Desarrollador y Programador Web",
+    "PAGE_DESCRIPTION": "Ingeniero de Sistemas, Desarrollador y Programador Web con enfoque en el desarrollo Fullstack.",
+    "NAME_TITLE": "Jose Sissa",
+    "NAME_DESCRIPTION": "Ingeniero de Sistemas",
+    "NAME_DESCRIPTION_AFTER_BR": "Desarrollador Web",
+    "SOCIAL_PILL_TITLE": "Visita mi",
+    "SOCIAL_PILL_ARIA_LABEL": "Enlace a mi cuenta de",
+    "EXPERIENCE" : {
+        "TITLE": "Experiencia",
+        "JOBS": [
+            {
+                "DATE": "FEB 2022 - Presente",
+                "COMPANY": "Grávital",
+                "WEB": "https://gravital.co/",
+                "POSITION": "Desarrollador Fullstack",
+                "SUMMARY": [
+                    "<span class='font-bold text-colorPrimary'>+3 años de experiencia</span> como desarrollador, especializado en la creación de interfaces eficientes y sistemas escalables. He formado parte del equipo de desarrollo de <a class='font-bold text-colorPrimary underline-transition' href='https://novitadiamonds.com/' target='_blank' rel='nofollow noreferrer' title='Web de Novita Diamonds'>Novita Diamonds</a>, un e-commerce con presencia en Australia, España, Reino Unido, Alemania, entre otros mercados donde he contribuido a mejorar la usabilidad, funcionalidad y rendimiento del sitio en distintos dispositivos, logrando interfaces más atractivas y optimizadas.",
+
+                    "Asimismo, he participado en la implementación, actualización y mejora de landing pages y plataformas digitales para el sector Fintech, en proyectos como <a class='font-bold text-colorPrimary underline-transition' href='https://vanka.com.co/' target='_blank' rel='nofollow noreferrer' title='Web de Vanka'>Vanka</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://gravital.co/' target='_blank' rel='nofollow noreferrer' title='Web de Grávital'>Grávital</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://agoraholding.co/' target='_blank' rel='nofollow noreferrer' title='Web de Agora Holding'>Ágora Holding</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://www.cincot.com/' target='_blank' rel='nofollow noreferrer' title='Web de Cincot'>Cincot</a> y <a class='font-bold text-colorPrimary underline-transition' href='https://delartesano.co/' target='_blank' rel='nofollow noreferrer' title='Web delArtesano'>DelArtesano</a>, aportando soluciones tecnológicas orientadas a mejorar la experiencia del usuario, la eficiencia y la lógica de negocio."
+                ]
+            }
+        ]
+    },
+    "PROJECTS": {
+        "TITLE": "Proyectos",
+        "PROJECTS_LIST": [
+            {
+                "TITLE": "Página web La Velada IV",
+                "DESCRIPTION": "Inspirada en la web de la Velada IV, donde se utilizan transiciones, animaciones, optimización de recursos, sistema de votación con autentificación y base de datos.",
+                "IMAGE_ALT": "Portada de la web de los ESLAND 2024"
+            },
+            {
+                "TITLE": "Página Premios ESLAND 2024",
+                "DESCRIPTION": "Inspirada en la web de los premios ESLAND 2024, se ha logrado optimizar recursos, crear sistema de votación con base de datos y agregar internacionalización (i18n), mostrando la web en Español, Inglés y Catalán.",
+                "IMAGE_ALT": "Portada de la web de los ESLAND 2024"
+            },
+            {
+                "TITLE": "Landing Page, La Velada IV",
+                "DESCRIPTION": "Landing page inspirada en la web de La Velada IV, creada con la intención de practicar la maquetación, uso de transiciones, animaciones y el uso de Three JS para crear un efecto humo en la página web.",
+                "IMAGE_ALT": "Portada de la Landing Page La Velada IV"
+            }
+        ]
+    },
+    "ABOUT_ME": {
+        "TITLE": "Sobre mí",
+        "P1_TEXT1": "Ingeniero de sistemas egresado de la",
+        "P1_TEXT2": "Universidad EAN",
+        "P1_TEXT3": "con fuertes conocimientos en el desarrollo web, apasionado por las nuevas tecnologías y enfocado en ofrecer soluciones que no solo luzcan bien, sino que, además, estén bien construidas para brindar un excelente rendimiento y fácil funcionalidad a todos los usuarios.",
+        "P2_TEXT1": "Trabajando como desarrollado Front-End en Grávital, he creado y mejorado diversas páginas web, asegurando que estas cumplan las normas de accesibilidad, y que siguiendo las mejores prácticas de desarrollo web, estén optimizadas, ofreciendo un excelente rendimiento y la mejor experiencia de usuario.",
+        "P3_TEXT1": "En mi tiempo libre, me enfoco en seguir mejorando mi inglés y en realizar proyectos personales que me ayudan a perfeccionar mis habilidades en las diversas tecnologías web, también me gusta leer, escuchar podcasts y jugar videojuegos."
+    },
+    "FOOTER": {
+        "TEXT_ONE": "Diseño inspirado en el portafolio de",
+        "TEXT_TWO": "Construido con",
+        "TEXT_AND": "y",
+        "TEXT_THREE": "Desplagado en",
+        "TEXT_FOUR": "Algunos proyectos fueron hechos siguiendo la guía de"
+    }
+}

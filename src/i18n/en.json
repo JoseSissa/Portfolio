@@ -1,0 +1,59 @@
+{
+    "PAGE_TITLE": "Jose Sissa - Web Developer and Programmer",
+    "PAGE_DESCRIPTION": "Systems Engineer, Web Developer and Programmer focused on Fullstack development.",
+    "NAME_TITLE": "Jose Sissa",
+    "NAME_DESCRIPTION": "Systems Engineer",
+    "NAME_DESCRIPTION_AFTER_BR": "Web Developer",
+    "SOCIAL_PILL_TITLE": "Visit my",
+    "SOCIAL_PILL_ARIA_LABEL": "Link to my",
+    "EXPERIENCE": {
+        "TITLE": "Experience",
+        "JOBS": [
+            {
+                "DATE": "FEB 2022 - Present",
+                "COMPANY": "Grávital",
+                "WEB": "https://gravital.co/",
+                "POSITION": "Fullstack Developer",
+                "SUMMARY": [
+                    "<span class='font-bold text-colorPrimary'>+3 years of experience</span> as a developer, specialized in building efficient interfaces and scalable systems. I have been part of the development team at <a class='font-bold text-colorPrimary underline-transition' href='https://novitadiamonds.com/' target='_blank' rel='nofollow noreferrer' title='Web de Novita Diamonds'>Novita Diamonds</a>, an e-commerce platform operating in Australia, Spain, the UK, Germany, and other markets, where I contributed to enhancing usability, functionality, and performance across various devices, resulting in more attractive and optimized interfaces.",
+                    "I have also contributed to the implementation, updates, and improvements of landing pages and digital platforms in the Fintech sector, working on projects such as <a class='font-bold text-colorPrimary underline-transition' href='https://vanka.com.co/' target='_blank' rel='nofollow noreferrer' title='Web de Vanka'>Vanka</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://gravital.co/' target='_blank' rel='nofollow noreferrer' title='Web de Grávital'>Grávital</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://agoraholding.co/' target='_blank' rel='nofollow noreferrer' title='Web de Agora Holding'>Ágora Holding</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://www.cincot.com/' target='_blank' rel='nofollow noreferrer' title='Web de Cincot'>Cincot</a>, and <a class='font-bold text-colorPrimary underline-transition' href='https://delartesano.co/' target='_blank' rel='nofollow noreferrer' title='Web delArtesano'>DelArtesano</a>, providing technology solutions focused on enhancing user experience, efficiency, and business logic."
+                ]
+            }
+        ]
+    },
+    "PROJECTS": {
+        "TITLE": "Projects",
+        "PROJECTS_LIST": [
+            {
+                "TITLE": "La Velada IV Website",
+                "DESCRIPTION": "Inspired by the La Velada IV website, featuring transitions, animations, resource optimization, a voting system with authentication, and a database.",
+                "IMAGE_ALT": "Cover of the ESLAND 2024 website"
+            },
+            {
+                "TITLE": "ESLAND Awards 2024 Website",
+                "DESCRIPTION": "Inspired by the ESLAND Awards 2024 website. Includes resource optimization, voting system with database, and internationalization (i18n), supporting Spanish, English, and Catalan.",
+                "IMAGE_ALT": "Cover of the ESLAND 2024 website"
+            },
+            {
+                "TITLE": "Landing Page, La Velada IV",
+                "DESCRIPTION": "Landing page inspired by the La Velada IV website. Created to practice layout design, transitions, animations, and the use of Three.js to create a smoke effect.",
+                "IMAGE_ALT": "Cover of the Landing Page La Velada IV"
+            }
+        ]
+    },
+    "ABOUT_ME": {
+        "TITLE": "About Me",
+        "P1_TEXT1": "Systems Engineer graduated from",
+        "P1_TEXT2": "EAN University",
+        "P1_TEXT3": "with strong knowledge in web development, passionate about new technologies and focused on delivering solutions that not only look good but are also well-built to offer excellent performance and usability for all users.",
+        "P2_TEXT1": "While working as a Front-End Developer at Grávital, I have created and improved various websites, ensuring compliance with accessibility standards and applying best practices in web development to deliver optimized performance and the best possible user experience.",
+        "P3_TEXT1": "In my free time, I focus on improving my English and working on personal projects that help me refine my skills in various web technologies. I also enjoy reading, listening to podcasts, and playing video games."
+    },
+    "FOOTER": {
+        "TEXT_ONE": "Design inspired by the portfolio of",
+        "TEXT_TWO": "Built with",
+        "TEXT_AND": "and",
+        "TEXT_THREE": "Deployed on",
+        "TEXT_FOUR": "Some projects were made following the guide from"
+    }
+}
