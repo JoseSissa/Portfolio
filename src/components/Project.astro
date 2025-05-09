@@ -12,22 +12,30 @@ const PROJECTS = [
     title: i18n.PROJECTS.PROJECTS_LIST[0].TITLE,
     description: i18n.PROJECTS.PROJECTS_LIST[0].DESCRIPTION,
     image_alt: i18n.PROJECTS.PROJECTS_LIST[0].IMAGE_ALT,
-    image_src: "/images/projects/cover/velada-web.webp",
-    demo: "https://3s-velada-2024.vercel.app/",
-    technologies: ['Astro', 'Tailwind CSS', 'JavaScript', 'Typescript', 'Turso']
+    image_src: "/images/projects/cover/agora-holding.webp",
+    demo: "https://agoraholding.co/",
+    technologies: ['Astro', 'Tailwind CSS', 'JavaScript']
   },
   {
     title: i18n.PROJECTS.PROJECTS_LIST[1].TITLE,
     description: i18n.PROJECTS.PROJECTS_LIST[1].DESCRIPTION,
     image_alt: i18n.PROJECTS.PROJECTS_LIST[1].IMAGE_ALT,
-    image_src: "/images/projects/cover/esland-web.webp",
-    demo: "https://3s-esland-2024.vercel.app/",
+    image_src: "/images/projects/cover/velada-web.webp",
+    demo: "https://3s-velada-2024.vercel.app/",
     technologies: ['Astro', 'Tailwind CSS', 'JavaScript', 'Typescript', 'Turso']
   },
   {
     title: i18n.PROJECTS.PROJECTS_LIST[2].TITLE,
     description: i18n.PROJECTS.PROJECTS_LIST[2].DESCRIPTION,
     image_alt: i18n.PROJECTS.PROJECTS_LIST[2].IMAGE_ALT,
+    image_src: "/images/projects/cover/esland-web.webp",
+    demo: "https://3s-esland-2024.vercel.app/",
+    technologies: ['Astro', 'Tailwind CSS', 'JavaScript', 'Typescript', 'Turso']
+  },
+  {
+    title: i18n.PROJECTS.PROJECTS_LIST[3].TITLE,
+    description: i18n.PROJECTS.PROJECTS_LIST[3].DESCRIPTION,
+    image_alt: i18n.PROJECTS.PROJECTS_LIST[3].IMAGE_ALT,
     image_src: "/images/projects/cover/velada-landing.webp",
     demo: "https://astro-khaki-nine.vercel.app/",
     technologies: ['Astro', 'Tailwind CSS', 'JavaScript', 'Three JS']
@@ -42,7 +50,7 @@ const PROJECTS = [
     PROJECTS.map((project) => {
       return (
         <a
-          class="group relative flex flex-col lg:flex-row gap-x-4 mb-12"
+          class="group relative flex flex-col sm:flex-row-reverse gap-x-4 mb-12"
           href={project.demo}
           target="_blank"
           rel="nofollow noreferrer"

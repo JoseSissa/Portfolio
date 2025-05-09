@@ -26,6 +26,11 @@
         "TITLE": "Proyectos",
         "PROJECTS_LIST": [
             {
+                "TITLE": "Página web de Ágora Holding",
+                "DESCRIPTION": "Landing page de Ágora Holding, donde se utilizan algunas animaciones, optimización de recursos buscando el mejor rendimiento y la mejor experiencia de usuario.",
+                "IMAGE_ALT": "Portada de la web de Ágora Holding"
+            },
+            {
                 "TITLE": "Página web La Velada IV",
                 "DESCRIPTION": "Inspirada en la web de la Velada IV, donde se utilizan transiciones, animaciones, optimización de recursos, sistema de votación con autentificación y base de datos.",
                 "IMAGE_ALT": "Portada de la web de los ESLAND 2024"

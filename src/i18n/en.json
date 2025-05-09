@@ -25,6 +25,11 @@
         "TITLE": "Projects",
         "PROJECTS_LIST": [
             {
+                "TITLE": "Ágora Holding",
+                "DESCRIPTION": "Landing page for Ágora Holding, featuring animations, resource optimization, and delivering top performance and user experience.",
+                "IMAGE_ALT": "Homepage of the Ágora Holding website"
+            },
+            {
                 "TITLE": "La Velada IV Website",
                 "DESCRIPTION": "Inspired by the La Velada IV website, featuring transitions, animations, resource optimization, a voting system with authentication, and a database.",
                 "IMAGE_ALT": "Cover of the ESLAND 2024 website"
