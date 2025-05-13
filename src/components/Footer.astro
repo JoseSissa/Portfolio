@@ -12,7 +12,7 @@ const i18n = geti18n({ currentLocale });
       href="https://brittanychiang.com/"
       target="_blank"
       rel="nofollow noreferrer"
-      title="Portafolio de Brittany Chiang"
+      title={i18n.FOOTER.TITLE_TEXT_ONE}
     >
       Brittany Chiang.
     </a>
@@ -24,24 +24,25 @@ const i18n = geti18n({ currentLocale });
       href="https://astro.build/"
       target="_blank"
       rel="nofollow noreferrer"
-      title="Web de Astro">Astro</a
-    > {i18n.FOOTER.TEXT_AND}
+      title={i18n.FOOTER.TITLE_TEXT_TWO}>Astro</a
+    > 
+    {i18n.FOOTER.TEXT_AND}
     <a
       class="font-bold text-colorPrimary underline-transition"
       href="https://tailwindcss.com/"
       target="_blank"
       rel="nofollow noreferrer"
-      title="Web de Tailwind CSS">Tailwind CSS</a
+      title={i18n.FOOTER.TITLE_TEXT_TWO_AFTER_AND}>Tailwind CSS</a
     >, {i18n.FOOTER.TEXT_THREE}
     <a
       class="font-bold text-colorPrimary underline-transition"
       href="https://vercel.com/"
       target="_blank"
       rel="nofollow noreferrer"
-      title="Web de Vercel">Vercel</a
+      title={i18n.FOOTER.TITLE_TEXT_THREE}>Vercel</a
     >.
   </p>
   <p>
-    {i18n.FOOTER.TEXT_FOUR} <a class="font-bold text-colorPrimary underline-transition" href="https://github.com/midudev" target="_blank" rel="nofollow noreferrer" title="GitHub de Midudev">Midudev</a>.
+    {i18n.FOOTER.TEXT_FOUR} <a class="font-bold text-colorPrimary underline-transition" href="https://github.com/midudev" target="_blank" rel="nofollow noreferrer" title={i18n.FOOTER.TITLE_TEXT_FOUR}>Midudev</a>.
   </p>
 </footer>

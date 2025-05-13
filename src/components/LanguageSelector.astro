@@ -9,7 +9,6 @@ type RouteKey<T extends Language> = keyof Routes[T];
 
 const pathname = Astro.url.pathname;
 const lang: LanguageKeyRoutes = getLangFromUrl(Astro.url);
-console.log({lang});
 
 let route = "";
 

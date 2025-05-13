@@ -13,17 +13,17 @@
                 "DATE": "FEB 2022 - Presente",
                 "COMPANY": "Grávital",
                 "WEB": "https://gravital.co/",
-                "POSITION": "Desarrollador Fullstack",
+                "POSITION": "Desarrollador Fullstack en",
                 "SUMMARY": [
                     "<span class='font-bold text-colorPrimary'>+3 años de experiencia</span> como desarrollador, especializado en la creación de interfaces eficientes y sistemas escalables. He formado parte del equipo de desarrollo de <a class='font-bold text-colorPrimary underline-transition' href='https://novitadiamonds.com/' target='_blank' rel='nofollow noreferrer' title='Web de Novita Diamonds'>Novita Diamonds</a>, un e-commerce con presencia en Australia, España, Reino Unido, Alemania, entre otros mercados donde he contribuido a mejorar la usabilidad, funcionalidad y rendimiento del sitio en distintos dispositivos, logrando interfaces más atractivas y optimizadas.",
-
-                    "Asimismo, he participado en la implementación, actualización y mejora de landing pages y plataformas digitales para el sector Fintech, en proyectos como <a class='font-bold text-colorPrimary underline-transition' href='https://vanka.com.co/' target='_blank' rel='nofollow noreferrer' title='Web de Vanka'>Vanka</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://gravital.co/' target='_blank' rel='nofollow noreferrer' title='Web de Grávital'>Grávital</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://agoraholding.co/' target='_blank' rel='nofollow noreferrer' title='Web de Agora Holding'>Ágora Holding</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://www.cincot.com/' target='_blank' rel='nofollow noreferrer' title='Web de Cincot'>Cincot</a> y <a class='font-bold text-colorPrimary underline-transition' href='https://delartesano.co/' target='_blank' rel='nofollow noreferrer' title='Web delArtesano'>DelArtesano</a>, aportando soluciones tecnológicas orientadas a mejorar la experiencia del usuario, la eficiencia y la lógica de negocio."
+                    "Asimismo, he participado en la implementación, actualización y mejora de landing pages y plataformas digitales para el sector Fintech, en proyectos como <a class='font-bold text-colorPrimary underline-transition' href='https://vanka.com.co/' target='_blank' rel='nofollow noreferrer' title='Web de Vanka'>Vanka</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://gravital.co/' target='_blank' rel='nofollow noreferrer' title='Web de Grávital'>Grávital</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://agoraholding.co/' target='_blank' rel='nofollow noreferrer' title='Web de Ágora Holding'>Ágora Holding</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://www.cincot.com/' target='_blank' rel='nofollow noreferrer' title='Web de Cincot'>Cincot</a> y <a class='font-bold text-colorPrimary underline-transition' href='https://delartesano.co/' target='_blank' rel='nofollow noreferrer' title='Web delArtesano'>DelArtesano</a>, aportando soluciones tecnológicas orientadas a mejorar la experiencia del usuario, la eficiencia y la lógica de negocio."
                 ]
             }
         ]
     },
     "PROJECTS": {
         "TITLE": "Proyectos",
+        "TEXT_TITLE": "Demostración de la página web",
         "PROJECTS_LIST": [
             {
                 "TITLE": "Página web de Ágora Holding",
@@ -49,6 +49,7 @@
     },
     "ABOUT_ME": {
         "TITLE": "Sobre mí",
+        "TEXT_TITLE":"Web de la Universidad EAN",
         "P1_TEXT1": "Ingeniero de sistemas egresado de la",
         "P1_TEXT2": "Universidad EAN",
         "P1_TEXT3": "con fuertes conocimientos en el desarrollo web, apasionado por las nuevas tecnologías y enfocado en ofrecer soluciones que no solo luzcan bien, sino que, además, estén bien construidas para brindar un excelente rendimiento y fácil funcionalidad a todos los usuarios.",
@@ -57,9 +58,14 @@
     },
     "FOOTER": {
         "TEXT_ONE": "Diseño inspirado en el portafolio de",
+        "TITLE_TEXT_ONE": "Portafolio de Brittany Chiang",
         "TEXT_TWO": "Construido con",
+        "TITLE_TEXT_TWO": "Web de Astro",
         "TEXT_AND": "y",
+        "TITLE_TEXT_TWO_AFTER_AND": "Web de Tailwind CSS",
         "TEXT_THREE": "Desplagado en",
-        "TEXT_FOUR": "Algunos proyectos fueron hechos siguiendo la guía de"
+        "TITLE_TEXT_THREE": "Web de Vercel",
+        "TEXT_FOUR": "Algunos proyectos fueron hechos siguiendo la guía de",
+        "TITLE_TEXT_FOUR": "GitHub de Midudev"
     }
 }

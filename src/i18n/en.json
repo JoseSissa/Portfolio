@@ -13,16 +13,17 @@
                 "DATE": "FEB 2022 - Present",
                 "COMPANY": "Grávital",
                 "WEB": "https://gravital.co/",
-                "POSITION": "Fullstack Developer",
+                "POSITION": "Fullstack Developer in",
                 "SUMMARY": [
-                    "<span class='font-bold text-colorPrimary'>+3 years of experience</span> as a developer, specialized in building efficient interfaces and scalable systems. I have been part of the development team at <a class='font-bold text-colorPrimary underline-transition' href='https://novitadiamonds.com/' target='_blank' rel='nofollow noreferrer' title='Web de Novita Diamonds'>Novita Diamonds</a>, an e-commerce platform operating in Australia, Spain, the UK, Germany, and other markets, where I contributed to enhancing usability, functionality, and performance across various devices, resulting in more attractive and optimized interfaces.",
-                    "I have also contributed to the implementation, updates, and improvements of landing pages and digital platforms in the Fintech sector, working on projects such as <a class='font-bold text-colorPrimary underline-transition' href='https://vanka.com.co/' target='_blank' rel='nofollow noreferrer' title='Web de Vanka'>Vanka</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://gravital.co/' target='_blank' rel='nofollow noreferrer' title='Web de Grávital'>Grávital</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://agoraholding.co/' target='_blank' rel='nofollow noreferrer' title='Web de Agora Holding'>Ágora Holding</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://www.cincot.com/' target='_blank' rel='nofollow noreferrer' title='Web de Cincot'>Cincot</a>, and <a class='font-bold text-colorPrimary underline-transition' href='https://delartesano.co/' target='_blank' rel='nofollow noreferrer' title='Web delArtesano'>DelArtesano</a>, providing technology solutions focused on enhancing user experience, efficiency, and business logic."
+                    "<span class='font-bold text-colorPrimary'>+3 years of experience</span> as a developer, specialized in building efficient interfaces and scalable systems. I have been part of the development team at <a class='font-bold text-colorPrimary underline-transition' href='https://novitadiamonds.com/' target='_blank' rel='nofollow noreferrer' title='Novita Diamonds website'>Novita Diamonds</a>, an e-commerce platform operating in Australia, Spain, the UK, Germany, and other markets, where I contributed to enhancing usability, functionality, and performance across various devices, resulting in more attractive and optimized interfaces.",
+                    "I have also contributed to the implementation, updates, and improvements of landing pages and digital platforms in the Fintech sector, working on projects such as <a class='font-bold text-colorPrimary underline-transition' href='https://vanka.com.co/' target='_blank' rel='nofollow noreferrer' title='Vanka website'>Vanka</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://gravital.co/' target='_blank' rel='nofollow noreferrer' title='Grávital website'>Grávital</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://agoraholding.co/' target='_blank' rel='nofollow noreferrer' title='Ágora Holding website'>Ágora Holding</a>, <a class='font-bold text-colorPrimary underline-transition' href='https://www.cincot.com/' target='_blank' rel='nofollow noreferrer' title='Cincot website'>Cincot</a>, and <a class='font-bold text-colorPrimary underline-transition' href='https://delartesano.co/' target='_blank' rel='nofollow noreferrer' title='delArtesano website'>delArtesano</a>, providing technology solutions focused on enhancing user experience, efficiency, and business logic."
                 ]
             }
         ]
     },
     "PROJECTS": {
         "TITLE": "Projects",
+        "TEXT_TITLE": "Web site demo",
         "PROJECTS_LIST": [
             {
                 "TITLE": "Ágora Holding",
@@ -48,6 +49,7 @@
     },
     "ABOUT_ME": {
         "TITLE": "About Me",
+        "TEXT_TITLE":"EAN University website",
         "P1_TEXT1": "Systems Engineer graduated from",
         "P1_TEXT2": "EAN University",
         "P1_TEXT3": "with strong knowledge in web development, passionate about new technologies and focused on delivering solutions that not only look good but are also well-built to offer excellent performance and usability for all users.",
@@ -56,9 +58,14 @@
     },
     "FOOTER": {
         "TEXT_ONE": "Design inspired by the portfolio of",
+        "TITLE_TEXT_ONE": "Brittany Chiang portfolio",
         "TEXT_TWO": "Built with",
+        "TITLE_TEXT_TWO": "Astro website",
         "TEXT_AND": "and",
+        "TITLE_TEXT_TWO_AFTER_AND": "Tailwind CSS website",
         "TEXT_THREE": "Deployed on",
-        "TEXT_FOUR": "Some projects were made following the guide from"
+        "TITLE_TEXT_THREE": "Vercel website",
+        "TEXT_FOUR": "Some projects were made following the guide from",
+        "TITLE_TEXT_FOUR": "Midudev GitHub"
     }
 }
